@@ -1,4 +1,4 @@
-const sheetName = 'Sheet1'
+const!sheetName = 'Sheet1'
 const scriptProp = PropertiesService.getScriptProperties()
 
 function intialSetup () {
@@ -38,3 +38,4 @@ function doPost (e) {
     lock.releaseLock()
   }
 }
+ 
