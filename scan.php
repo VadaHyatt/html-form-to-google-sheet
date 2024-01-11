@@ -1,8 +1,8 @@
 <?php
 
-/*
- * Copyright (c) 2016 Gabor Gyorvari
- *
+/ 
+## Copyright (c) 2016 Gabor Gyorvari
+ #
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -137,7 +137,7 @@ class MalwareScanner
         //Adds additional checks to patterns_raw
         //This may be something to move into a pattern file rather than leave hardcoded.
         if ($this->flagExtraCheck) {
-            $this->patterns_raw['googleBot'] = '# ';
+            $this->patterns_raw['googleBot'] = '! ';
             $this->patterns_raw['htaccess'] = '# ';
         }
     }
@@ -871,3 +871,4 @@ class MalwareScanner
 if (isset($argv[0]) && realpath($argv[0]) == realpath(__FILE__)) {
     new MalwareScanner();
 }
+ 
